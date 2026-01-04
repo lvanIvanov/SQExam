@@ -1,0 +1,63 @@
+name: Build and Analyze
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  build:
+    name: Build and Analyze
+    runs-on: self-hosted
+
+    steps:
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: 17
+          distribution: 'zulu'
+
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Install SonarScanner
+        run: dotnet tool install --global dotnet-sonarscanner || true
+
+      - name: Begin SonarQube Scan
+        run: |
+          dotnet sonarscanner begin /k:"BugFreeInvest" \
+          /d:sonar.host.url="http://localhost:9000" \
+          /d:sonar.token="${{ secrets.SONAR_TOKEN }}" \
+          /d:sonar.cs.opencover.reportsPaths="**/TestResults/**/coverage.opencover.xml" \
+          /d:sonar.coverage.exclusions="**/*.Tests.*/**,**/Program.cs"
+
+      - name: Build Application
+        run: dotnet build --configuration Release
+
+      - name: Run Tests with Code Coverage
+        run: |
+          dotnet test \
+          --configuration Release \
+          --no-build \
+          --verbosity normal \
+          --collect:"XPlat Code Coverage" \
+          --results-directory ./TestResults
+
+      - name: End SonarQube Scan
+        run: dotnet sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
+
+      - name: Wait for Quality Gate
+        run: |
+          sleep 10
+          RESPONSE=$(curl -s -u "${{ secrets.SONAR_TOKEN }}:" \
+            "http://localhost:9000/api/qualitygates/project_status?projectKey=BugFreeInvest")
+          QUALITY_GATE_STATUS=$(echo "$RESPONSE" | grep -o '"status":"[^"]*"' | head -1 | cut -d'"' -f4)
+          echo "Quality Gate Status: $QUALITY_GATE_STATUS"
+          if [ "$QUALITY_GATE_STATUS" != "OK" ]; then
+            echo "Quality Gate failed. View details at: http://localhost:9000/dashboard?id=BugFreeInvest"
+            exit 1
+          fi

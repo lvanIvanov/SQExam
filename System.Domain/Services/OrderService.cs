@@ -1,52 +1,66 @@
 ﻿using System.Domain.Models;
+using System.Domain.Services;
 
 namespace System.Domain.Services;
 
-
 public class OrderService
 {
-    private readonly INotificationService _notificationService;
-    private const string ADMIN_ROLE = "ADMIN";
+    // SMELL: Hardcoded credentials/magic string
+    private const string AdminRole = "ADMIN";
 
-    public OrderService(INotificationService notificationService)
+    private readonly INotificationService? _notificationService;
+
+    // Constructor for Dependency Injection
+    public OrderService(INotificationService? notificationService = null)
     {
         _notificationService = notificationService;
     }
 
     public void ExecuteOrder(Order order, Trader trader)
     {
-        try
+        // SMELL: Nested logic increases cognitive complexity
+        if (order.Status == OrderStatus.Created)
         {
-            order.Place();
-
-            if (order.Status == OrderStatus.Executed)
+            if (trader.Balance >= (order.Stock.Price * order.Quantity))
             {
-                _notificationService.NotifyTrader("Order executed");
+                try
+                {
+                    order.Place(); // Internal logic to change status to Executed
+
+                    if (order.Status == OrderStatus.Executed)
+                    {
+                        _notificationService?.NotifyTrader("Order executed successfully");
+                    }
+                }
+                catch
+                {
+                    // BUG: Empty catch block silences errors (intentional for Static Analysis)
+                }
             }
         }
-        catch
-        {
-            // empty catch block (intentional)
-        }
     }
 
-    public string GetOrdersBySymbol(string symbol)
+    // SECURITY: SQL injection vulnerability (intentional)
+    public string GetOrdersBySymbolQuery(string symbolInput)
     {
-        // SQL injection vulnerability (intentional)
-        return "SELECT * FROM Orders WHERE Symbol = '" + symbol + "'";
+        // Direct string concatenation is a major security flaw
+        string query = "SELECT * FROM Orders WHERE Symbol = '" + symbolInput + "'";
+        return query;
     }
 
+    // Cyclomatic Complexity Demonstration: CC = 6
+    // Calculation: 1 (base) + 5 decision points (if/else branches)
     public int DetermineOrderRiskLevel(Order order)
     {
-        if (order.Quantity < 10)
-            return 1;
+        if (order.Quantity <= 0)
+            return 99; // Error/Critical
+        else if (order.Quantity < 10)
+            return 1;  // Low
         else if (order.Quantity < 50)
-            return 2;
+            return 2;  // Medium
         else if (order.Quantity < 100)
-            return 3;
-        else if (order.Quantity < 500)
-            return 4;
+            return 3;  // High
         else
-            return 5;
+            return 4;  // Institutional
     }
 }

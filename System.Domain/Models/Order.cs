@@ -2,21 +2,28 @@
 
 public class Order
 {
-    public int Id;
-    public Stock Stock;
-    public int Quantity;
-    public OrderType Type;
-    public OrderStatus Status;
+    public string Id { get; set; }
+    public Stock Stock { get; set; }
+    public int Quantity { get; set; }
+    public OrderType Type { get; set; }
+    public OrderStatus Status { get; set; }
+
+    // SMELL: Public field breaking encapsulation (Intentional)
+    public string OrderPriority = "Normal";
 
     public Order(Stock stock, int quantity, OrderType type)
     {
-        Id = new Random().Next(1, 100000); // weak RNG (intentional)
+        // SECURITY: Weak random number generator for ID (Intentional)
+        Id = new Random().Next(1000, 99999).ToString();
+        
         Stock = stock;
         Quantity = quantity;
         Type = type;
         Status = OrderStatus.Created;
     }
 
+    // Cyclomatic Complexity: CC = 3
+    // Calculation: 1 (base) + 2 decision points (if statements at line 30, 32)
     public void Place()
     {
         if (Quantity > 0)
@@ -32,6 +39,7 @@ public class Order
         }
         else
         {
+            // Note: This branch is covered by CC = 3 logic
             Status = OrderStatus.Rejected;
         }
     }
