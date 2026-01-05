@@ -1,0 +1,15 @@
+services:
+  sonarqube:
+    image: sonarqube:community
+    container_name: sonarqube_bugfree_invest
+    ports:
+      - "9000:9000"
+    environment:
+      - SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true
+    networks:
+      - sonarnet
+    restart: always
+
+networks:
+  sonarnet:
+    driver: bridge

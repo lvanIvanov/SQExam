@@ -1,0 +1,176 @@
+{
+  "scannerProperties": [
+    {
+      "key": "sonar.scanner.app",
+      "value": "ScannerMSBuild"
+    },
+    {
+      "key": "sonar.scanner.appVersion",
+      "value": "11.0"
+    },
+    {
+      "key": "sonar.scanner.bootstrapStartTime",
+      "value": "1767495590000"
+    },
+    {
+      "key": "sonar.projectKey",
+      "value": "BugFreeInvest"
+    },
+    {
+      "key": "sonar.working.directory",
+      "value": "C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\.sonarqube\\out\\.sonar"
+    },
+    {
+      "key": "sonar.projectBaseDir",
+      "value": "C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest"
+    },
+    {
+      "key": "sonar.pullrequest.cache.basepath",
+      "value": "C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest"
+    },
+    {
+      "key": "sonar.sources",
+      "value": "C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\.github\\workflows\\build.yml,C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\docker-compose.yml"
+    },
+    {
+      "key": "sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "sonar.modules",
+      "value": "23D4A910-874C-4F01-A0EA-8B9A3603ED62,C22C5DCF-ACE5-46AE-BEF5-0BCE8BD7140A,5F3AFA75-A6E0-4EAF-90C9-0D57671E4162"
+    },
+    {
+      "key": "23D4A910-874C-4F01-A0EA-8B9A3603ED62.sonar.projectKey",
+      "value": "BugFreeInvest:23D4A910-874C-4F01-A0EA-8B9A3603ED62"
+    },
+    {
+      "key": "23D4A910-874C-4F01-A0EA-8B9A3603ED62.sonar.projectName",
+      "value": "System.Tests.BDD"
+    },
+    {
+      "key": "23D4A910-874C-4F01-A0EA-8B9A3603ED62.sonar.projectBaseDir",
+      "value": "C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Tests.BDD"
+    },
+    {
+      "key": "23D4A910-874C-4F01-A0EA-8B9A3603ED62.sonar.working.directory",
+      "value": "C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\.sonarqube\\out\\.sonar\\mod0"
+    },
+    {
+      "key": "23D4A910-874C-4F01-A0EA-8B9A3603ED62.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "23D4A910-874C-4F01-A0EA-8B9A3603ED62.sonar.sources",
+      "value": ""
+    },
+    {
+      "key": "23D4A910-874C-4F01-A0EA-8B9A3603ED62.sonar.tests",
+      "value": "C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Tests.BDD\\Features\\StockOrderExecution.feature.cs,C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Tests.BDD\\Features\\StockOrderExecution.feature,C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Tests.BDD\\obj\\project.assets.json,C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Tests.BDD\\obj\\project.packagespec.json,C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Tests.BDD\\obj\\System.Tests.BDD.csproj.nuget.dgspec.json,C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Tests.BDD\\bin\\Debug\\net9.0\\System.Tests.BDD.deps.json,C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Tests.BDD\\bin\\Debug\\net9.0\\System.Tests.BDD.runtimeconfig.json,C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Tests.BDD\\obj\\Debug\\net9.0\\System.Tests.BDD.sourcelink.json"
+    },
+    {
+      "key": "23D4A910-874C-4F01-A0EA-8B9A3603ED62.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\.sonarqube\\out\\0"
+    },
+    {
+      "key": "23D4A910-874C-4F01-A0EA-8B9A3603ED62.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\.sonarqube\\out\\0\\Issues.json"
+    },
+    {
+      "key": "23D4A910-874C-4F01-A0EA-8B9A3603ED62.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\.sonarqube\\out\\0\\Telemetry.json"
+    },
+    {
+      "key": "C22C5DCF-ACE5-46AE-BEF5-0BCE8BD7140A.sonar.projectKey",
+      "value": "BugFreeInvest:C22C5DCF-ACE5-46AE-BEF5-0BCE8BD7140A"
+    },
+    {
+      "key": "C22C5DCF-ACE5-46AE-BEF5-0BCE8BD7140A.sonar.projectName",
+      "value": "System.Domain"
+    },
+    {
+      "key": "C22C5DCF-ACE5-46AE-BEF5-0BCE8BD7140A.sonar.projectBaseDir",
+      "value": "C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Domain"
+    },
+    {
+      "key": "C22C5DCF-ACE5-46AE-BEF5-0BCE8BD7140A.sonar.working.directory",
+      "value": "C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\.sonarqube\\out\\.sonar\\mod1"
+    },
+    {
+      "key": "C22C5DCF-ACE5-46AE-BEF5-0BCE8BD7140A.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "C22C5DCF-ACE5-46AE-BEF5-0BCE8BD7140A.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "C22C5DCF-ACE5-46AE-BEF5-0BCE8BD7140A.sonar.sources",
+      "value": "C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Domain\\obj\\project.assets.json,C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Domain\\obj\\project.packagespec.json,C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Domain\\obj\\System.Domain.csproj.nuget.dgspec.json,C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Domain\\bin\\Debug\\net9.0\\System.Domain.deps.json,C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Domain\\obj\\Debug\\net9.0\\System.Domain.sourcelink.json,C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Domain\\Models\\Order.cs,C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Domain\\Models\\OrderStatus.cs,C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Domain\\Models\\OrderType.cs,C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Domain\\Models\\Stock.cs,C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Domain\\Models\\Trader.cs,C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Domain\\Services\\INotificationService.cs,C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Domain\\Services\\OrderService.cs"
+    },
+    {
+      "key": "C22C5DCF-ACE5-46AE-BEF5-0BCE8BD7140A.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\.sonarqube\\out\\1"
+    },
+    {
+      "key": "C22C5DCF-ACE5-46AE-BEF5-0BCE8BD7140A.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\.sonarqube\\out\\1\\Issues.json"
+    },
+    {
+      "key": "C22C5DCF-ACE5-46AE-BEF5-0BCE8BD7140A.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\.sonarqube\\out\\1\\Telemetry.json"
+    },
+    {
+      "key": "5F3AFA75-A6E0-4EAF-90C9-0D57671E4162.sonar.projectKey",
+      "value": "BugFreeInvest:5F3AFA75-A6E0-4EAF-90C9-0D57671E4162"
+    },
+    {
+      "key": "5F3AFA75-A6E0-4EAF-90C9-0D57671E4162.sonar.projectName",
+      "value": "System.Tests.Unit"
+    },
+    {
+      "key": "5F3AFA75-A6E0-4EAF-90C9-0D57671E4162.sonar.projectBaseDir",
+      "value": "C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Tests.Unit"
+    },
+    {
+      "key": "5F3AFA75-A6E0-4EAF-90C9-0D57671E4162.sonar.working.directory",
+      "value": "C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\.sonarqube\\out\\.sonar\\mod2"
+    },
+    {
+      "key": "5F3AFA75-A6E0-4EAF-90C9-0D57671E4162.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "5F3AFA75-A6E0-4EAF-90C9-0D57671E4162.sonar.sources",
+      "value": ""
+    },
+    {
+      "key": "5F3AFA75-A6E0-4EAF-90C9-0D57671E4162.sonar.tests",
+      "value": "C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Tests.Unit\\obj\\project.assets.json,C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Tests.Unit\\obj\\project.packagespec.json,C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Tests.Unit\\obj\\System.Tests.Unit.csproj.nuget.dgspec.json,C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Tests.Unit\\bin\\Debug\\net9.0\\System.Tests.Unit.deps.json,C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Tests.Unit\\bin\\Debug\\net9.0\\System.Tests.Unit.runtimeconfig.json,C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Tests.Unit\\obj\\Debug\\net9.0\\System.Tests.Unit.sourcelink.json,C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Tests.Unit\\StrykerOutput\\2026-01-04.03-15-40\\reports\\mutation-report.html,C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Tests.Unit\\OrderService.cs,C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Tests.Unit\\OrderTests.cs,C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\System.Tests.Unit\\StrykerOutput\\2026-01-04.03-15-40\\.gitignore"
+    },
+    {
+      "key": "5F3AFA75-A6E0-4EAF-90C9-0D57671E4162.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\.sonarqube\\out\\2"
+    },
+    {
+      "key": "5F3AFA75-A6E0-4EAF-90C9-0D57671E4162.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\.sonarqube\\out\\2\\Issues.json"
+    },
+    {
+      "key": "5F3AFA75-A6E0-4EAF-90C9-0D57671E4162.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\ivan1\\RiderProjects\\BugFreeInvest\\.sonarqube\\out\\2\\Telemetry.json"
+    },
+    {
+      "key": "sonar.token",
+      "value": "***"
+    },
+    {
+      "key": "sonar.host.url",
+      "value": "http://localhost:9000"
+    },
+    {
+      "key": "sonar.visualstudio.enable",
+      "value": "false"
+    }
+  ]
+}
