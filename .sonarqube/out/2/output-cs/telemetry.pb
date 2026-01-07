@@ -1,1 +1,1 @@
-kRUC:\Users\ivan1\RiderProjects\BugFreeInvest\System.Tests.Unit\System.Tests.Unit.csproj¢net9.0òCSharp13
+iRSC:\Users\ivan1\RiderProjects\BugFreeInvest\System.Tests.BDD\System.Tests.BDD.csproj¢net9.0òCSharp13

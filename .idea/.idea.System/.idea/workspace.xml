@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc7bfd23-855c-433f-a8c7-f967e1da32f7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.BugFreeInvest/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.BugFreeInvest/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.BugFreeInvest/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.BugFreeInvest/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.BugFreeInvest/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BugFreeInvest.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/System.Domain/Models/Order.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/System.Domain/Models/OrderStatus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/System.Domain/Models/OrderType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/System.Domain/Models/Stock.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/System.Domain/Models/Trader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/System.Domain/Services/INotificationService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/System.Domain/Services/OrderService.cs" afterDir="false" />
-    </list>
+    <list default="true" id="fc7bfd23-855c-433f-a8c7-f967e1da32f7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,8 +13,28 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "lvanIvanov"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/lvanIvanov/SQExam.git",
+    "accountId": "020bd073-80d2-4516-b6c8-b7bd5d5de318"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/System.Tests.Unit/UnitTest1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/System.Tests.BDD/Features/StockOrderExecution.feature.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/System.Tests.Unit/OrderTests.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 1
@@ -60,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1767475672265</updated>
-      <workItem from="1767475673432" duration="1540000" />
+      <workItem from="1767475673432" duration="10742000" />
     </task>
     <servers />
   </component>

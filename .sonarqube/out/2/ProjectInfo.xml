@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
-  <ProjectName>System.Tests.Unit</ProjectName>
+  <ProjectName>System.Tests.BDD</ProjectName>
   <ProjectLanguage>C#</ProjectLanguage>
   <ProjectType>Test</ProjectType>
-  <ProjectGuid>5f3afa75-a6e0-4eaf-90c9-0d57671e4162</ProjectGuid>
-  <FullPath>C:\Users\ivan1\RiderProjects\BugFreeInvest\System.Tests.Unit\System.Tests.Unit.csproj</FullPath>
+  <ProjectGuid>23d4a910-874c-4f01-a0ea-8b9a3603ed62</ProjectGuid>
+  <FullPath>C:\Users\ivan1\RiderProjects\BugFreeInvest\System.Tests.BDD\System.Tests.BDD.csproj</FullPath>
   <IsExcluded>false</IsExcluded>
   <AnalysisResultFiles>
     <AnalysisResultFile Id="FilesToAnalyze" Location="C:\Users\ivan1\RiderProjects\BugFreeInvest\.sonarqube\conf\2\FilesToAnalyze.txt" />

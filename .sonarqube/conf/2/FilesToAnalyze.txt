@@ -1,5 +1,5 @@
-﻿C:\Users\ivan1\RiderProjects\BugFreeInvest\System.Tests.Unit\OrderService.cs
-C:\Users\ivan1\RiderProjects\BugFreeInvest\System.Tests.Unit\OrderTests.cs
+﻿C:\Users\ivan1\RiderProjects\BugFreeInvest\System.Tests.BDD\Features\StockOrderExecution.feature.cs
+C:\Users\ivan1\RiderProjects\BugFreeInvest\System.Tests.BDD\StepDefinitions\System.StepDefinitions.cs
 C:\Users\ivan1\.nuget\packages\microsoft.net.test.sdk\18.0.1\build\net8.0\Microsoft.NET.Test.Sdk.Program.cs
 C:\Users\ivan1\.nuget\packages\microsoft.testplatform.testhost\18.0.1\build\net8.0\x64\testhost.exe
 C:\Users\ivan1\.nuget\packages\microsoft.testplatform.testhost\18.0.1\build\net8.0\x64\testhost.dll
@@ -9,6 +9,5 @@ C:\Users\ivan1\.nuget\packages\nunit3testadapter\6.0.1\build\net8.0\nunit.engine
 C:\Users\ivan1\.nuget\packages\nunit3testadapter\6.0.1\build\net8.0\nunit.engine.core.dll
 C:\Users\ivan1\.nuget\packages\nunit3testadapter\6.0.1\build\net8.0\testcentric.engine.metadata.dll
 C:\Users\ivan1\.nuget\packages\nunit3testadapter\6.0.1\build\net8.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\ivan1\RiderProjects\BugFreeInvest\System.Tests.Unit\StrykerOutput\2026-01-04.03-15-40\.gitignore
-C:\Users\ivan1\RiderProjects\BugFreeInvest\System.Tests.Unit\StrykerOutput\2026-01-04.03-15-40\reports\mutation-report.html
+C:\Users\ivan1\RiderProjects\BugFreeInvest\System.Tests.BDD\Features\StockOrderExecution.feature
 C:\Users\ivan1\.nuget\packages\nunit3testadapter\6.0.1\build\net8.0\NUnit3.TestAdapter.dll
