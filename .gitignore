@@ -3,3 +3,16 @@ obj/
 /packages/
 riderModule.iml
 /_ReSharper.Caches/
+
+# SonarQube
+.sonarqube/
+.sonar/
+
+# Test and Coverage Results
+[Tt]est[Rr]esult*/
+coverage.opencover.xml
+coverage.cobertura.xml
+
+# JetBrains Rider / IntelliJ
+.idea/
+*.sln.iml

@@ -1,1 +1,0 @@
-cRMC:\Users\ivan1\RiderProjects\BugFreeInvest\System.Domain\System.Domain.csproj¢net9.0òCSharp13

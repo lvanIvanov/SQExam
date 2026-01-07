@@ -1,7 +1,0 @@
-﻿C:\Users\ivan1\RiderProjects\BugFreeInvest\System.Domain\Models\Order.cs
-C:\Users\ivan1\RiderProjects\BugFreeInvest\System.Domain\Models\OrderStatus.cs
-C:\Users\ivan1\RiderProjects\BugFreeInvest\System.Domain\Models\OrderType.cs
-C:\Users\ivan1\RiderProjects\BugFreeInvest\System.Domain\Models\Stock.cs
-C:\Users\ivan1\RiderProjects\BugFreeInvest\System.Domain\Models\Trader.cs
-C:\Users\ivan1\RiderProjects\BugFreeInvest\System.Domain\Services\INotificationService.cs
-C:\Users\ivan1\RiderProjects\BugFreeInvest\System.Domain\Services\OrderService.cs
