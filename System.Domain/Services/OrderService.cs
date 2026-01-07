@@ -11,41 +11,30 @@ public class OrderService
         _notificationService = notificationService;
     }
 
-    public void ExecuteOrder(Order order, Trader trader)
+    public void ExecuteOrder(Trader trader, Order order)
     {
-        if (order == null || trader == null || order.Stock == null) return;
-
-        decimal totalCost = order.Stock.Price * order.Quantity;
-
-        if (order.Status == OrderStatus.Created && trader.Balance >= totalCost)
-        {
-            trader.Balance -= totalCost; 
-        
-            order.Place(); 
-
-            if (order.Status == OrderStatus.Executed)
-            {
-                _notificationService?.NotifyTrader("Order executed successfully");
-            }
-        }
-        else if (trader.Balance < totalCost)
+        if (order.Status != OrderStatus.Created) return;
+    
+        decimal totalCost = order.Quantity * order.Stock.Price;
+        if (trader.Balance < totalCost) 
         {
             order.Reject();
             _notificationService?.NotifyTrader("Insufficient funds");
+            return;
         }
+        
+        trader.DeductBalance(totalCost);
+        order.Place();
+        _notificationService?.NotifyTrader("Order Executed Successfully");
     }
     
-    public static int DetermineOrderRiskLevel(Order order)
-    {
-        if (order == null) return 99;
-        
-        return order.Quantity switch
+    public static string DetermineOrderRiskLevel(Order order) =>
+        order.Quantity switch
         {
-            <= 0 => 99,
-            < 10 => 1,
-            < 50 => 2,
-            < 100 => 3,
-            _ => 4
+            <= 0  => "Invalid",   // Guard case
+            < 10  => "Low",       // Retail trader
+            < 50  => "Medium",    // Active trader
+            < 100 => "High",      // Institutional/Pro
+            _     => "Critical"   // Whale/High Exposure
         };
-    }
 }

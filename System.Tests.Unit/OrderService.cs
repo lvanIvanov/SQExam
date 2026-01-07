@@ -17,19 +17,20 @@ public class OrderServiceTests
         var order = new Order(new Stock("TSLA", 100m), 1, OrderType.Buy);
 
         // Act
-        service.ExecuteOrder(order, trader);
+        service.ExecuteOrder(trader, order);
 
         // Assert
         mockNotify.Verify(n => n.NotifyTrader(It.IsAny<string>()), Times.Once);
     }
     
     [Test]
-    [TestCase(-1, 99)]
-    [TestCase(5, 1)]
-    [TestCase(20, 2)]
-    [TestCase(75, 3)]
-    [TestCase(150, 4)]
-    public void DetermineOrderRiskLevel_ReturnsCorrectLevel(int quantity, int expectedLevel)
+    [TestCase(-1, "Invalid")]
+    [TestCase(0, "Invalid")]
+    [TestCase(5, "Low")]
+    [TestCase(25, "Medium")]
+    [TestCase(75, "High")]
+    [TestCase(150, "Critical")]
+    public void DetermineOrderRiskLevel_ReturnsCorrectLevel(int quantity, string expectedRisk)
     {
         // Arrange
         var stock = new Stock("AAPL", 150m);
@@ -39,6 +40,6 @@ public class OrderServiceTests
         var result = OrderService.DetermineOrderRiskLevel(order);
 
         // Assert
-        Assert.That(result, Is.EqualTo(expectedLevel));
+        Assert.That(result, Is.EqualTo(expectedRisk));
     }
 }

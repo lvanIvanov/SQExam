@@ -11,4 +11,12 @@ public class Trader
         Name = name;
         Balance = balance;
     }
+    
+    public void DeductBalance(decimal amount)
+    {
+        if (amount > Balance) 
+            throw new InvalidOperationException("Insufficient funds.");
+
+        Balance -= amount;
+    }
 }

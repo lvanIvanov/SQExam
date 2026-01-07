@@ -37,7 +37,7 @@ public class SystemStepDefinitions
             throw new InvalidOperationException("Test state not initialized properly.");
 
         _order = new Order(_stock, 10, OrderType.Buy);
-        _service.ExecuteOrder(_order, _trader);
+        _service.ExecuteOrder(_trader, _order);
     }
     
     [When(@"I attempt to place a Buy order for (.*) shares of (.*)")]
@@ -53,7 +53,7 @@ public class SystemStepDefinitions
         {
             _stock = new Stock(ticker, 100m);
             _order = new Order(_stock, quantity, OrderType.Buy);
-            _service.ExecuteOrder(_order, _trader);
+            _service.ExecuteOrder(_trader, _order);
         }
         catch (Exception ex)
         {
@@ -67,7 +67,7 @@ public class SystemStepDefinitions
         if (_order == null || _service == null || _trader == null) 
             throw new InvalidOperationException("Context not initialized: Ensure Given steps ran correctly.");
 
-        _service.ExecuteOrder(_order, _trader);
+        _service.ExecuteOrder(_trader, _order);
     }
 
     [Then("the order should be executed")]
@@ -100,7 +100,7 @@ public class SystemStepDefinitions
 
         _order = new Order(_stock, quantity, OrderType.Buy);
         try {
-            _service.ExecuteOrder(_order, _trader);
+            _service.ExecuteOrder(_trader, _order);
         } catch (Exception ex) {
             _lastException = ex;
         }

@@ -1,5 +1,6 @@
 ﻿using System.Domain.Models;
 using System.Domain.Services;
+using NUnit.Framework;
 
 namespace System.Tests.Unit;
 
@@ -16,7 +17,7 @@ public class OrderBoundaryTests
         var service = new OrderService();
 
         // Act
-        service.ExecuteOrder(order, trader);
+        service.ExecuteOrder(trader, order);
 
         // Assert
         Assert.That(trader.Balance, Is.EqualTo(0m));
@@ -33,7 +34,7 @@ public class OrderBoundaryTests
         var service = new OrderService();
 
         // Act
-        service.ExecuteOrder(order, trader);
+        service.ExecuteOrder(trader, order);
 
         // Assert
         Assert.Multiple(() =>
