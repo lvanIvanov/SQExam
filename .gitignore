@@ -16,3 +16,8 @@ coverage.cobertura.xml
 # JetBrains Rider / IntelliJ
 .idea/
 *.sln.iml
+
+# Test results and coverage reports
+TestResults/
+StrykerOutput/
+*.opencover.xml

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://raw.githubusercontent.com/stryker-mutator/stryker-net/master/src/Stryker.Core/Stryker.Core/schema.json",
+  "stryker-config": {
+    "project": "System.Domain/System.Domain.csproj",
+    "test-projects": [
+      "System.Tests.Unit/System.Tests.Unit.csproj"
+    ],
+    "reporters": [
+      "html",
+      "progress",
+      "cleartext"
+    ],
+    "thresholds": {
+      "high": 80,
+      "low": 60,
+      "break": 0
+    },
+    "mutation-level": "standard",
+    "concurrency": 4,
+    "mutate": [
+      "Services/*.cs",
+      "Models/*.cs"
+    ]
+  }
+}
